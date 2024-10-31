@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Главная - Детский центр развития{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Hero секция -->
+    <section class="hero-section py-5" style="background-color: #FFF6F4;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4">Раскройте потенциал вашего ребёнка</h1>
+                    <p class="lead mb-4">Развивающие занятия для детей от 2 до 12 лет. Творчество, познание и радость
+                        каждый день!</p>
+                    <button class="btn btn-primary btn-lg">Записаться на пробное занятие</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="static\image\08_19.png" alt="Счастливые дети" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section class="features py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Почему родители выбирают нас</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">🎨</div>
+                            <h3 class="h5">Творческое развитие</h3>
+                            <p>Уникальные методики раскрытия творческого потенциала через игру и искусство</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">👥</div>
+                            <h3 class="h5">Опытные педагоги</h3>
+                            <p>Команда профессиональных педагогов с многолетним опытом работы с детьми</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">🌟</div>
+                            <h3 class="h5">Индивидуальный подход</h3>
+                            <p>Учитываем особенности каждого ребенка и подбираем оптимальную программу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+{% endblock %}

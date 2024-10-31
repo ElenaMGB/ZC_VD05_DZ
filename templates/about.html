@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}О нас - Детский центр развития{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Заголовок страницы -->
+    <section class="page-header py-5" style="background-color: #FFF6F4;">
+        <div class="container">
+            <h1 class="text-center">О нашем центре</h1>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="about-content py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Наша миссия</h2>
+                    <p class="lead">Мы создаем пространство, где каждый ребенок может раскрыть свой потенциал и полюбить
+                        процесс познания мира.</p>
+                    <p>Наш центр основан в 2015 году и за это время мы помогли более 1000 детям развить их таланты и
+                        способности. Мы верим, что каждый ребенок уникален и заслуживает индивидуального подхода к
+                        обучению.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="static\image\12_01.png" alt="Наш центр" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section class="team py-5" style="background-color: #F8F9FA;">
+        <div class="container">
+            <h2 class="text-center mb-5">Команда</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="static\image\sensorics.png" alt="Преподаватель" class="img-fluid rounded"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h3 class="h5">Анна Петрова</h3>
+                            <p class="text-muted">Руководитель центра</p>
+                            <p>Педагог высшей категории с 15-летним опытом работы с детьми</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавьте аналогичные карточки для других членов команды -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ценности -->
+    <section class="values py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Ценности</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="value-icon mb-3">❤️</div>
+                        <h3 class="h5">Забота</h3>
+                        <p>Внимательное отношение к каждому ребенку</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="value-icon mb-3">🎯</div>
+                        <h3 class="h5">Развитие</h3>
+                        <p>Постоянное совершенствование методик</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="value-icon mb-3">🤝</div>
+                        <h3 class="h5">Сотрудничество</h3>
+                        <p>Тесное взаимодействие с родителями</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="value-icon mb-3">🌱</div>
+                        <h3 class="h5">Безопасность</h3>
+                        <p>Создание комфортной среды для развития</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

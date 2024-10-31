@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Программы{% endblock %}
+    
+{% block content %}
+<!-- Секция программ -->
+<section class="programs py-5" style="background-color: #F8F9FA;">
+    <div class="container">
+        <h2 class="text-center mb-5">Наши программы</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="static\image\08_02.png" class="img-fluid rounded" alt="Развивающие занятия">
+                    <div class="card-body">
+                        <h5 class="card-title">Раннее развитие</h5>
+                        <p class="card-text">Для детей 2-4 лет</p>
+                        <a href="#" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Добавьте аналогичные карточки для других программ -->
+        </div>
+    </div>
+</section>
+{% endblock %}

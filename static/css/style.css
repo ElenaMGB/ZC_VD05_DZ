@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #FF6B52;
+    --secondary-color: #7c26c2e1;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+body {
+    /* Добавляем отступ сверху, равный высоте Top Bar */
+    padding-top: 79px;
+    /* Может потребоваться корректировка значения */
+}
+
+
+.top-bar {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    /* Добавляем фиксированное позиционирование */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    /* Значение выше, чем у обычной навигации */
+    /* Добавляем легкую тень для визуального отделения */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Корректируем отступ для навигационной панели */
+.navbar {
+    padding-top: 0;
+}
+
+.top-bar .social-icons a {
+    font-size: 16px;
+    transition: opacity 0.3s;
+    text-decoration: none;
+    /* убираем подчеркивание */
+    display: inline-flex;
+    /* для лучшего выравнивания */
+    align-items: center;
+    /* для лучшего выравнивания */
+    justify-content: center;
+    /* для лучшего выравнивания */
+}
+
+.top-bar .social-icons a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    /* убираем подчеркивание при наведении */
+}
+
+/* Также обновим стиль для номера телефона */
+.top-bar .phone-number a {
+    transition: color 0.3s;
+    text-decoration: none;
+    /* убираем подчеркивание */
+}
+
+.top-bar .phone-number a:hover {
+    color: #f8f9fa !important;
+    text-decoration: none;
+    /* убираем подчеркивание при наведении */
+}
+
+.top-bar .btn-light {
+    background: white;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.top-bar .btn-light:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+footer {
+    background: #f8f9fa;
+    padding: 60px 0 30px;
+}
+
+.contact-info {
+    background: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+}
+
+
+footer {
+        background-color: #f8f9fa;
+    }
+
+    .footer-main {
+        position: relative;
+    }
+
+    .footer-main::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--primary-color);
+    }
+
+    .footer-main h4 {
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        /* добавлено это свойство */
+    }
+
+    .social-link:hover {
+        background-color: var(--secondary-color);
+        color: white;
+        transform: translateY(-3px);
+        text-decoration: none;
+        /* и здесь тоже для надежности */
+    }
+
+    .footer-contact .contact-item {
+        color: #666;
+    }
+
+    .footer-contact .contact-item i {
+        color: var(--primary-color);
+        width: 20px;
+    }
+
+    .footer-contact a {
+        color: #666;
+        transition: color 0.3s ease;
+    }
+
+    .footer-contact a:hover {
+        color: var(--primary-color);
+    }
+
+    .footer-links ul li a {
+        color: #666;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .footer-links ul li a:hover {
+        color: var(--primary-color);
+        padding-left: 5px;
+    }
+
+    .footer-links i {
+        color: var(--primary-color);
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom {
+        background-color: #f1f1f1;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom a {
+        color: #666;
+    }
+
+    .footer-bottom a:hover {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+        .footer-bottom {
+            text-align: center;
+        }
+
+        .footer-bottom .text-md-end {
+            margin-top: 1rem;
+        }
+    }
